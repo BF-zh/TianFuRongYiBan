@@ -1,11 +1,45 @@
 <!--pages/interactive/index.wxml-->
 <my-navigation background="var(--primary-color)">
   <view class="h-full px-md grid column-3 items-center">
-   <view class="flex items-center gap-sm">
-    <text>成都市</text>
-    <van-icon name="arrow-down" />
-   </view>
-   <view style="font-size: large;" class="flex justify-center items-center">天赋容易办</view>
+    <view class="flex items-center gap-sm">
+      <text>成都市</text>
+      <van-icon name="arrow-down" />
+    </view>
+    <view style="font-size: large;" class="flex justify-center items-center">天赋容易办</view>
   </view>
 </my-navigation>
 <view class="common-bg" />
+
+<van-cell-group inset custom-class="cell-group">
+  <van-cell title="政企互动" size="large" />
+  <van-grid border="{{false}}" column-num="3" custom-class="grid-warp">
+    <van-grid-item use-slot>
+      <van-image width="3em" fit="widthFix" src="/static/szxx.png" />
+      <text class="text-sm align-center grid-item">市长信箱</text>
+    </van-grid-item>
+    <van-grid-item use-slot>
+      <van-image width="3em" fit="widthFix" src="/static/12315.png" />
+      <text class="text-sm align-center grid-item">12315热线</text>
+    </van-grid-item>
+    <van-grid-item use-slot>
+      <van-image width="3em" fit="widthFix" src="/static/xjcx.png" />
+      <text class="text-sm align-center grid-item">信件查询</text>
+    </van-grid-item>
+  </van-grid>
+</van-cell-group>
+<van-cell-group inset custom-class="cell-group">
+  <van-cell title="常见问题" size="large" value="更多">
+    <van-icon slot="right-icon" name="arrow" />
+  </van-cell>
+  <van-collapse value="{{ activeNames }}" bind:change="onChange">
+    <van-collapse-item title="标题1" name="1">
+      代码是写出来给人看的，附带能在机器上运行
+    </van-collapse-item>
+    <van-collapse-item title="标题2" name="2">
+      代码是写出来给人看的，附带能在机器上运行
+    </van-collapse-item>
+    <van-collapse-item title="标题3" name="3">
+      代码是写出来给人看的，附带能在机器上运行
+    </van-collapse-item>
+  </van-collapse>
+</van-cell-group>

@@ -1,15 +1,12 @@
 // app.js
 const {
-  getSystemInfo,
-  getProvince
+  getSystemInfo
 } = require("./utils/index")
 App({
   onLaunch() {
     this.globalData.navigation = getSystemInfo()
-    this.globalData.province = getProvince()
   },
   globalData: {
-    navigation: null,
-    province:null
+    navigation: null
   }
 })

@@ -1,4 +1,3 @@
 module.exports ={
-  getSystemInfo:require("./common/getSystemInfo"),
-  getProvince:require("./common/getProvince")
+  getSystemInfo:require("./common/getSystemInfo")
 }
