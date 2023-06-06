@@ -1,0 +1,63 @@
+{
+  "tabBar": {
+    "selectedColor": "#338dfa",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "/static/tabBar/one.png",
+        "selectedIconPath": "/static/tabBar/oneI.png"
+      },
+      {
+        "pagePath": "pages/Convenience/index",
+        "text": "便民",
+        "iconPath": "/static/tabBar/two.png",
+        "selectedIconPath": "/static/tabBar/twoI.png"
+      },
+      {
+        "pagePath": "pages/work/index",
+        "text": "办事",
+        "iconPath": "/static/tabBar/three.png",
+        "selectedIconPath": "/static/tabBar/threeI.png"
+      },
+      {
+        "pagePath": "pages/interactive/index",
+        "text": "互动",
+        "iconPath": "/static/tabBar/four.png",
+        "selectedIconPath": "/static/tabBar/four.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我的",
+        "iconPath": "/static/tabBar/five.png",
+        "selectedIconPath": "/static/tabBar/fiveI.png"
+      }
+  ]
+  },
+  "pages":[
+    "pages/home/index",
+    "pages/Convenience/index",
+    "pages/work/index",
+    "pages/interactive/index",
+    "pages/me/index"
+  ],
+  "usingComponents": {
+    "my-navigation":"/components/navigation/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-image": "@vant/weapp/image/index"
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json"
+}
