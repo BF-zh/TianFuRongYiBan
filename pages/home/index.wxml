@@ -75,15 +75,67 @@
   <van-tabs tab-class="tab-class" active="{{ active }}" bind:change="onChange">
     <van-tab title="热门服务">
       <van-grid border="{{false}}" custom-class="grid-warp">
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
-        <van-grid-item icon="photo-o" text="文字" />
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/fgfw.png" />
+          <text class="text-sm grid-item">房管服务</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/lnrrz.png" />
+          <text class="text-sm grid-item">老年人认证</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/shjf.png" />
+          <text class="text-sm grid-item">生活缴费</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/gjj.png" />
+          <text class="text-sm grid-item">公积金</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/qydj.png" />
+          <text class="text-sm grid-item">企业登记档案查询</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/shbzk.png" />
+          <text class="text-sm grid-item">社会保障卡</text>
+        </van-grid-item>
+        <van-grid-item use-slot>
+          <van-image   width="4em" fit="widthFix" src="/static/yypd.png" />
+          <text class="text-sm grid-item">预约排队</text>
+        </van-grid-item>
       </van-grid>
     </van-tab>
     <van-tab title="特色专区">内容 2</van-tab>
   </van-tabs>
+</van-cell-group>
+
+<van-cell-group inset custom-class="cell-group">
+  <van-cell title="政策咨询" value="更多资讯" size="large" />
+  <van-cell use-label-slot title-width="calc(100% - 8em)" title="成都市人民政府办公厅 关于印刷……" value="2023-06-03">
+    <view slot="label" class="flex gap-m">
+      <view class="flex items-center">
+        <van-icon name="eye-o" />
+        <text>127</text>
+      </view>
+      <van-tag plain color="var(--secondary-color)">成都市人民政府办公厅</van-tag>
+    </view>
+  </van-cell>
+  <van-cell use-label-slot title-width="calc(100% - 8em)" title="2023年成都市促进体育 （产业……" value="2023-05-05">
+    <view slot="label" class="flex gap-m">
+      <view class="flex items-center">
+        <van-icon name="eye-o" />
+        <text>127</text>
+      </view>
+      <van-tag plain color="var(--secondary-color)">成都市体育局</van-tag>
+    </view>
+  </van-cell>
+  <van-cell use-label-slot title-width="calc(100% - 8em)" title="成都市商务局关于组织开展 市……" value="2023-04-24">
+    <view slot="label" class="flex gap-m">
+      <view class="flex items-center">
+        <van-icon name="eye-o" />
+        <text>127</text>
+      </view>
+      <van-tag plain color="var(--secondary-color)">成都市商务局</van-tag>
+    </view>
+  </van-cell>
 </van-cell-group>

@@ -5,7 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    keyword:"",
+    tabs:{
+      activeId:0,
+      tab:[
+        {title:"社会保障",id:0},
+        {title:"房管服务",id:1},
+        {title:"不动产等级",id:3},
+        {title:"公积金",id:4},
+      ]
+    }
   },
 
   /**
@@ -62,5 +71,10 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+  handleChange({currentTarget}){
+    const {item} = currentTarget.dataset
+    this.setData({"tabs.activeId":item.id})
+    console.log(item);
   }
 })

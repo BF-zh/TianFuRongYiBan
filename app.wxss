@@ -2,11 +2,12 @@ page {
   --primary-color: #8bc6ff;
   --secondary-color:#656667;
   --link-color:#4c86e3;
+  --xs:3.25px;
   --md: 15px;
   --sm: 7.5px;
   --xl: 20px;
   --xxl: 25px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background-color: #faf9f9;
 }
 .text-sm{
@@ -62,6 +63,36 @@ page {
   padding-bottom: var(--md);
 }
 
+
+.p-xs {
+  padding: var(--xs);
+}
+
+.px-xs {
+  padding-left: var(--xs);
+  padding-right: var(--xs);
+}
+
+.py-xs {
+  padding-top: var(--xs);
+  padding-bottom: var(--xs);
+}
+
+.pl-xs {
+  padding-left: var(--xs);
+}
+
+.pr-xs {
+  padding-right: var(--xs);
+}
+
+.pt-xs {
+  padding-top: var(--xs);
+}
+
+.pb-xs {
+  padding-bottom: var(--xs);
+}
 .p-sm {
   padding: var(--sm);
 }
@@ -465,4 +496,8 @@ page {
 }
 .van-tabs__line{
   background: var(--primary-color) !important;
+}
+.grid-item{
+  height: 2em;
+  max-width: 5em;
 }

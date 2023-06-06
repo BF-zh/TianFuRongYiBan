@@ -1,2 +1,11 @@
 <!--pages/interactive/index.wxml-->
-<text>pages/interactive/index.wxml</text>
+<my-navigation background="var(--primary-color)">
+  <view class="h-full px-md grid column-3 items-center">
+   <view class="flex items-center gap-sm">
+    <text>成都市</text>
+    <van-icon name="arrow-down" />
+   </view>
+   <view style="font-size: large;" class="flex justify-center items-center">天赋容易办</view>
+  </view>
+</my-navigation>
+<view class="common-bg" />

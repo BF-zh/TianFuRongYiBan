@@ -24,7 +24,7 @@
         "pagePath": "pages/interactive/index",
         "text": "互动",
         "iconPath": "/static/tabBar/four.png",
-        "selectedIconPath": "/static/tabBar/four.png"
+        "selectedIconPath": "/static/tabBar/fourI.png"
       },
       {
         "pagePath": "pages/me/index",
@@ -50,7 +50,9 @@
     "van-grid-item": "@vant/weapp/grid-item/index",
     "van-tab": "@vant/weapp/tab/index",
     "van-tabs": "@vant/weapp/tabs/index",
-    "van-image": "@vant/weapp/image/index"
+    "van-image": "@vant/weapp/image/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-search": "@vant/weapp/search/index"
   },
   "window":{
     "backgroundTextStyle":"light",

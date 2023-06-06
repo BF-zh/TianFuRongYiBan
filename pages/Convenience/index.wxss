@@ -1,1 +1,14 @@
 /* pages/Convenience/index.wxss */
+.van-search__content{
+  background: rgba(255, 255, 255, .5) !important;
+}
+.tab{
+  --bg:#ebf6ff;
+  --c:#367ee3;
+  color: var(--c);
+  background-color:var(--bg);
+}
+.tab.active{
+  --c:#fff;
+  --bg:#367ee3;
+}

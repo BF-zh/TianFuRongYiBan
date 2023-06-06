@@ -1,2 +1,59 @@
 <!--pages/Convenience/index.wxml-->
-<text>pages/Convenience/index.wxml</text>
+<my-navigation background="var(--primary-color)">
+  <view class="h-full px-md grid column-3 items-center">
+    <view class="flex items-center gap-sm">
+      <text>成都市</text>
+      <van-icon name="arrow-down" />
+    </view>
+    <view style="font-size: large;" class="flex justify-center items-center">天赋容易办</view>
+  </view>
+</my-navigation>
+<view class="common-bg" />
+<van-cell-group border="{{false}}">
+  <van-search model:value="{{ keyword }}" placeholder="请输入搜索关键词" bind:search="onSearch" background="transparent" bind:cancel="onCancel" />
+</van-cell-group>
+<van-cell-group inset>
+  <van-cell border="{{false}}">
+    <scroll-view slot="title">
+      <view class="flex gap-sm">
+        <text wx:for="{{tabs.tab}}" wx:key="index" data-item="{{item}}" bindtap="handleChange" class="tab px-md py-xs radius-md ellipsis {{item.id == tabs.activeId?'active':''}} ">{{item.title}}</text>
+      </view>
+    </scroll-view>
+  </van-cell>
+<scroll-view 	scroll-y="{{true}}" scroll-into-view="item{{tabs.activeId}}" style="height: calc(100vh - 210px);">
+  <view id="item{{item.id}}" wx:key="index" wx:for="{{tabs.tab}}">
+    <van-cell title="{{item.title}}" sezi="large" border="{{false}}" />
+    <van-grid border="{{false}}" custom-class="grid-warp">
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/shbzk.png" />
+        <text class="text-sm align-center grid-item">社会保障卡</text>
+      </van-grid-item>
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/fgfw.png" />
+        <text class="text-sm align-center grid-item">房管服务</text>
+      </van-grid-item>
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/lnrrz.png" />
+        <text class="text-sm align-center grid-item">老年人认证</text>
+      </van-grid-item>
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/shjf.png" />
+        <text class="text-sm align-center grid-item">生活缴费</text>
+      </van-grid-item>
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/gjj.png" />
+        <text class="text-sm align-center grid-item">公积金</text>
+      </van-grid-item>
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/qydj.png" />
+        <text class="text-sm align-center grid-item">企业登记档案查询</text>
+      </van-grid-item>
+
+      <van-grid-item use-slot>
+        <van-image width="3em" fit="widthFix" src="/static/yypd.png" />
+        <text class="text-sm align-center grid-item">预约排队</text>
+      </van-grid-item>
+    </van-grid>
+  </view>
+</scroll-view>
+</van-cell-group>
