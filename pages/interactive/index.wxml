@@ -43,3 +43,9 @@
     </van-collapse-item>
   </van-collapse>
 </van-cell-group>
+<van-cell-group inset custom-class="cell-group">
+  <van-cell title="咨询投诉" size="large" />
+  <van-cell title="容易办智能客服" is-link />
+  <van-cell title="“办事不成”反应窗口" is-link />
+  <van-cell title="企业跨区迁移申述" is-link />
+</van-cell-group>

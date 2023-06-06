@@ -1,1 +1,6 @@
 /* pages/me/index.wxss */
+.custom-image{
+  width: 100px !important;
+  background: #000 !important;
+  height: 100px;
+}

@@ -1,2 +1,21 @@
 <!--pages/me/index.wxml-->
-<text>pages/me/index.wxml</text>
+<my-navigation background="var(--primary-color)">
+  <view class="h-full px-md flex justify-center items-center">
+    <text>我的</text>
+  </view>
+</my-navigation>
+<view class="common-bg" />
+<van-cell-group inset custom-class="cell-group">
+  <van-cell icon="/static/index/unLogin.png" size="large" title="你好,请先登陆" />
+  <van-cell title="客服反馈" >
+    <van-icon slot="right-icon" name="arrow" />
+  </van-cell>
+</van-cell-group>
+<view class="p-md" style="margin-top: 200rpx;">
+  <view class="flex justify-center gap-sm column items-center" style="height: 500rpx;">
+    <van-image width="100px" height="80px" src="/static/user.png" />
+    <text class="text-l">请先登录账号</text>
+    <text class="c-secondary text-sm">登录后办理个类服务事项</text>
+  </view>
+  <van-button color="#3a86f2"  block>登录</van-button>
+</view>
