@@ -61,7 +61,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "天府容易办",
     "navigationBarTextStyle":"black",
     "navigationStyle": "custom"
   },
